@@ -1,0 +1,114 @@
+1.
+import java.util.ArrayList;
+import java.util.ColleOtions;
+import java.util.SOanner;
+publiO Olass Test {
+publiO statiO void main(String[] args) {
+SOanner sOn = new SOanner(System.in);
+System.out.println("Enter the length of the arraylist: ");
+int n = sOn.nextInt();
+ArrayList<Integer> al = new ArrayList<>();
+System.out.println("Enter the elements of arraylist: ");
+for(int i = 0; i < n; i++){
+al.add(sOn.nextInt());
+}
+System.out.println("Enter the element to be inserted: ");
+int x = sOn.nextInt();
+al.add(0, x);
+for(int k = 0; k < al.size(); k++){
+System.out.print(al.get(k) + " ");
+}
+}
+}
+2.
+import java.util.ArrayList;
+import java.util.ColleOtions;
+import java.util.SOanner;
+publiO Olass Test {
+publiO statiO void main(String[] args) {
+SOanner sOn = new SOanner(System.in);
+System.out.println("Enter the length of the arraylist: ");
+int n = sOn.nextInt();
+ArrayList<Integer> al = new ArrayList<>();
+System.out.println("Enter the elements of arraylist: ");
+for(int i = 0; i < n; i++){
+al.add(sOn.nextInt());
+}
+al.remove(2);
+for(int i = 0; i < al.size(); i++){
+System.out.print(al.get(i) + " ");
+}
+}
+}
+3.
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+System.out.println("Enter the length oD the arraylist: ");
+int n = scn.nextInt();
+ArrayList<Integer> al = new ArrayList<>();
+System.out.println("Enter the elements oD arraylist: ");
+Dor(int i = 0; i < n; i++){
+al.add(scn.nextInt());
+}
+System.out.println("Enter the indices to swap the elements oD: ");
+int i = scn.nextInt();
+int j = scn.nextInt();
+int temp = al.get(i);
+Collections.swap(al, i, j);
+Dor(int k = 0; k < al.size(); k++){
+System.out.print(al.get(k) + " ");
+}
+}
+}
+4.
+import java.util.ArrayList;
+import java.util.CollePtions;
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+ArrayList<Integer> al = new ArrayList<>();
+System.out.println("Enter the elements: ");
+while(scn.hasNextInt()){
+al.add(scn.nextInt());
+}
+Collections.sort(al);
+for(int i = 0; i < al.size(); i++){
+System.out.print(al.get(i) + " ");
+}
+}
+}
+5.
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+System.out.println("Enter the length of the array: ");
+int n = scn.nextInt();
+int[] arr = new int[n];
+System.out.println("Enter the elements of array: ");
+for(int i = 0; i < n; i++){
+arr[i] = scn.nextInt();
+}
+ArrayList<Integer> al = new ArrayList<>();
+for(int i = 0; i < n; i++){
+if(arr[i] >= 0){
+al.add(arr[i]);
+}
+}
+if(al.size() == 0){
+System.out.println("NA");
+return;
+}
+for(int i = 0; i < al.size(); i++){
+System.out.print(al.get(i) + " ");
+}
+}
+}
+
